@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수능 영어 독해 마스터 가이드</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', 'Noto Sans KR', sans-serif; background-color: #f8fafc; }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .quiz-option:hover { background-color: #eff6ff; }
+        .correct { background-color: #dcfce7 !important; border-color: #22c55e !important; }
+        .wrong { background-color: #fee2e2 !important; border-color: #ef4444 !important; }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <header class="bg-indigo-700 text-white py-12 px-6 text-center shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">📚 수능 영어 지문 독해 전략실</h1>
+            <p class="text-lg text-indigo-100">고2를 위한 실전 대비: 지문의 흐름을 읽고 정답을 도출하는 논리의 힘</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-8 flex items-center">
+                <span class="bg-indigo-100 text-indigo-700 p-2 rounded-lg mr-3">Step</span>
+                지문 독해 4단계 핵심 가이드
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 가이드 카드 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 card-hover">
+                    <div class="text-indigo-600 text-3xl mb-4">🔍</div>
+                    <h3 class="font-bold text-xl mb-2 text-indigo-900">01. 소재 파악</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">첫 두 문장에서 지문의 '주인공'인 핵심 키워드를 찾아보세요. 무엇에 관한 이야기인가요?</p>
+                </div>
+                <!-- 가이드 카드 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 card-hover">
+                    <div class="text-indigo-600 text-3xl mb-4">⚖️</div>
+                    <h3 class="font-bold text-xl mb-2 text-indigo-900">02. 논리 방향</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">역접(However)이나 예시(For example)를 통해 필자의 주장 방향이 바뀌는지 확인하세요.</p>
+                </div>
+                <!-- 가이드 카드 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 card-hover">
+                    <div class="text-indigo-600 text-3xl mb-4">📝</div>
+                    <h3 class="font-bold text-xl mb-2 text-indigo-900">03. 재진술(Paraphrase)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">핵심 문장이 다른 단어와 표현으로 어떻게 반복되는지 연결 고리를 찾아보세요.</p>
+                </div>
+                <!-- 가이드 카드 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 card-hover">
+                    <div class="text-indigo-600 text-3xl mb-4">🎯</div>
+                    <h3 class="font-bold text-xl mb-2 text-indigo-900">04. 오답 제거</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">너무 포괄적이거나, 지문에 없는 내용, 반대되는 내용을 선지에서 지워나갑니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-3xl shadow-xl p-8 border border-slate-100">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-slate-900">📝 오늘 배운 내용 복습 퀴즈</h2>
+                <span id="score-badge" class="bg-indigo-100 text-indigo-700 px-4 py-1 rounded-full text-sm font-semibold">진행도: 0/1</span>
+            </div>
+
+            <div id="quiz-container">
+                <div class="bg-slate-50 p-6 rounded-xl mb-6">
+                    <p class="text-sm font-bold text-indigo-600 mb-2">[문제 01] 다음 문장의 논리적 관계를 파악하세요.</p>
+                    <p class="text-lg leading-relaxed italic text-slate-700 font-medium">
+                        "The development of technology has improved communication; ________, it has also created digital isolation among individuals."
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <button onclick="checkAnswer(this, false)" class="quiz-option w-full text-left p-4 rounded-xl border-2 border-slate-200 transition-all focus:outline-none">
+                        <span class="font-bold mr-3">①</span> Therefore (그러므로)
+                    </button>
+                    <button onclick="checkAnswer(this, true)" class="quiz-option w-full text-left p-4 rounded-xl border-2 border-slate-200 transition-all focus:outline-none">
+                        <span class="font-bold mr-3">②</span> However (하지만)
+                    </button>
+                    <button onclick="checkAnswer(this, false)" class="quiz-option w-full text-left p-4 rounded-xl border-2 border-slate-200 transition-all focus:outline-none">
+                        <span class="font-bold mr-3">③</span> In addition (게다가)
+                    </button>
+                    <button onclick="checkAnswer(this, false)" class="quiz-option w-full text-left p-4 rounded-xl border-2 border-slate-200 transition-all focus:outline-none">
+                        <span class="font-bold mr-3">④</span> For instance (예를 들어)
+                    </button>
+                </div>
+
+                <div id="feedback" class="mt-8 hidden">
+                    <div id="feedback-box" class="p-4 rounded-xl border mb-4">
+                        <!-- 피드백 메시지가 여기에 들어갑니다 -->
+                    </div>
+                    <button onclick="location.reload()" class="bg-indigo-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-indigo-700">다시 풀기</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function checkAnswer(element, isCorrect) {
+            // 모든 버튼 비활성화
+            const options = document.querySelectorAll('.quiz-option');
+            options.forEach(opt => {
+                opt.disabled = true;
+                opt.classList.remove('quiz-option');
+            });
+
+            const feedbackDiv = document.getElementById('feedback');
+            const feedbackBox = document.getElementById('feedback-box');
+            const scoreBadge = document.getElementById('score-badge');
+            
+            feedbackDiv.classList.remove('hidden');
+
+            if (isCorrect) {
+                element.classList.add('correct');
+                feedbackBox.className = "p-4 rounded-xl border border-green-200 bg-green-50 text-green-800";
+                feedbackBox.innerHTML = "<strong>정답입니다!</strong> 문장의 앞부분은 '기술의 발전(긍정)', 뒷부분은 '디지털 소외(부정)'를 다루고 있으므로 역접의 연결어인 'However'가 적절합니다.";
+                scoreBadge.textContent = "진행도: 1/1 (완료!)";
+            } else {
+                element.classList.add('wrong');
+                // 정답 강조
+                options[1].classList.add('correct');
+                feedbackBox.className = "p-4 rounded-xl border border-red-200 bg-red-50 text-red-800";
+                feedbackBox.innerHTML = "<strong>아쉬워요!</strong> 문장의 전후 흐름이 반대(장점 vs 단점)이므로 논리적 전환을 나타내는 접속사를 골라야 합니다.";
+            }
+        }
+    </script>
+
+    <footer class="text-center py-8 text-slate-400 text-sm">
+        <p>© 2024 High School English Lab. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
