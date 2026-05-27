@@ -84,7 +84,7 @@
 
     <div class="max-w-4xl mx-auto mb-6 flex justify-between items-center bg-slate-800 text-white p-4 rounded-xl shadow-md">
         <div class="flex items-center gap-2">
-            <span class="w-3 h-3 bg-emerald-500 rounded-full animate-pulse" id="dbStatusDot"></span>
+            <span class="w-3 h-3 bg-rose-500 rounded-full animate-pulse" id="dbStatusDot"></span>
             <span class="text-xs font-semibold" id="dbStatusText">데이터베이스 연동 대기 중</span>
         </div>
         <div class="flex gap-2">
@@ -102,7 +102,7 @@
         <h3 class="text-lg font-bold text-slate-800 mb-2 flex items-center gap-2">
             <i data-lucide="database" class="text-indigo-600"></i> Firebase 데이터베이스 설정
         </h3>
-        <p class="text-xs text-slate-500 mb-4">교사님의 Firebase Realtime Database 구성 정보를 입력하면 데이터가 자동으로 클라우드에 연동 및 저장됩니다.</p>
+        <p class="text-xs text-slate-500 mb-4">구성을 수정하고 저장하면 실시간 브라우저 정보가 업데이트됩니다.</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
                 <label class="block text-xs font-semibold text-slate-600 mb-1">API Key</label>
@@ -110,15 +110,15 @@
             </div>
             <div>
                 <label class="block text-xs font-semibold text-slate-600 mb-1">Database URL</label>
-                <input type="text" id="fbDbUrl" class="input-box text-sm py-2" placeholder="https://your-app-default-rtdb.firebaseio.com">
+                <input type="text" id="fbDbUrl" class="input-box text-sm py-2" placeholder="https://...">
             </div>
             <div>
                 <label class="block text-xs font-semibold text-slate-600 mb-1">Project ID</label>
-                <input type="text" id="fbProjectId" class="input-box text-sm py-2" placeholder="your-project-id">
+                <input type="text" id="fbProjectId" class="input-box text-sm py-2" placeholder="project-id">
             </div>
             <div>
                 <label class="block text-xs font-semibold text-slate-600 mb-1">App ID</label>
-                <input type="text" id="fbAppId" class="input-box text-sm py-2" placeholder="1:1234:web:abcd">
+                <input type="text" id="fbAppId" class="input-box text-sm py-2" placeholder="1:123:web:abc">
             </div>
         </div>
         <div class="mt-4 flex justify-end gap-2">
@@ -233,7 +233,7 @@
                         
                         <!-- Sentence 1 -->
                         <div class="border-b border-slate-200 pb-6 font-sans">
-                            <p class="text-lg mb-2 font-serif text-slate-900">
+                            <p class="text-lg mb-2 font-serif text-slate-900 leading-relaxed">
                                 Most people <input type="text" id="ws1" required class="inline-input" placeholder="(1) 동사"> the idea of a true self-estimate, / probably because they fear / it might mean downgrading some of their beliefs / about who they are and what they're capable of.
                             </p>
                             <p class="text-slate-600 text-sm leading-relaxed">
@@ -246,7 +246,7 @@
 
                         <!-- Sentence 2 -->
                         <div class="border-b border-slate-200 pb-6 font-sans">
-                            <p class="text-lg mb-2 font-serif text-slate-900">
+                            <p class="text-lg mb-2 font-serif text-slate-900 leading-relaxed">
                                 As Goethe's maxim goes, / it is a great <input type="text" id="ws3" required class="inline-input" placeholder="(3) 명사"> / "to see yourself as more than you are."
                             </p>
                             <p class="text-slate-600 text-sm">
@@ -256,7 +256,7 @@
 
                         <!-- Sentence 3 -->
                         <div class="border-b border-slate-200 pb-6 font-sans">
-                            <p class="text-lg mb-2 font-serif text-slate-900">
+                            <p class="text-lg mb-2 font-serif text-slate-900 leading-relaxed">
                                 How could you really be considered self-aware / if you refuse to consider your weaknesses?
                             </p>
                             <p class="text-slate-600 text-sm">
@@ -266,7 +266,7 @@
 
                         <!-- Sentence 4 -->
                         <div class="border-b border-slate-200 pb-6 font-sans">
-                            <p class="text-lg mb-2 font-serif text-slate-900">
+                            <p class="text-lg mb-2 font-serif text-slate-900 leading-relaxed">
                                 Don't fear self-assessment / because you're worried / you might have to <input type="text" id="ws5" required class="inline-input" placeholder="(5) 동사"> some things about yourself.
                             </p>
                             <p class="text-slate-600 text-sm">
@@ -276,17 +276,17 @@
 
                         <!-- Sentence 5 -->
                         <div class="border-b border-slate-200 pb-6 font-sans">
-                            <p class="text-lg mb-2 font-serif text-slate-900">
+                            <p class="text-lg mb-2 font-serif text-slate-900 leading-relaxed">
                                 The second half of Goethe's maxim / is important too. He states that / it is equally <input type="text" id="ws7" required class="inline-input" placeholder="(7) 형용사"> / to "value yourself at less than your true worth."
                             </p>
                             <p class="text-slate-600 text-sm">
-                                괴테의 격언의 후반부도 / 역시 중요하다. 그는 ~라고 말한다 / 똑같이 해롭다고 / "자신을 진정한 <input type="text" id="ws8" required class="inline-input short" placeholder="(8) 한글 뜻">보다 낮게 평가하는 것도."
+                                괴테의 격언의 후반부도 / 역시 중요하다. He states that / 똑같이 해롭다고 / "자신을 진정한 <input type="text" id="ws8" required class="inline-input short" placeholder="(8) 한글 뜻">보다 낮게 평가하는 것도."
                             </p>
                         </div>
 
                         <!-- Sentence 6 -->
                         <div class="border-b border-slate-200 pb-6 font-sans">
-                            <p class="text-lg mb-2 font-serif text-slate-900">
+                            <p class="text-lg mb-2 font-serif text-slate-900 leading-relaxed">
                                 We underestimate our capabilities / just as much and just as dangerously / as we <input type="text" id="ws9" required class="inline-input long" placeholder="(9) 동사"> other abilities.
                             </p>
                             <p class="text-slate-600 text-sm">
@@ -296,7 +296,7 @@
 
                         <!-- Sentence 7 -->
                         <div class="font-sans">
-                            <p class="text-lg mb-2 font-serif text-slate-900">
+                            <p class="text-lg mb-2 font-serif text-slate-900 leading-relaxed">
                                 Cultivate the ability / to judge yourself accurately and honestly. Look inward to <input type="text" id="ws11" required class="inline-input" placeholder="(11) 동사"> / what you're capable of / and what it will take / to unlock that potential.
                             </p>
                             <p class="text-slate-600 text-sm">
@@ -307,13 +307,13 @@
                     </div>
                 </section>
 
-                <!-- STEP 3: 내용 확인 퀴즈 (실제 NotebookLM 콘텐츠 직접 연동) -->
+                <!-- STEP 3: 내용 확인 퀴즈 (직관적인 웹 앱 상의 객관식 풀이로 완벽 연동) -->
                 <section class="section-card">
                     <h2 class="text-xl font-bold text-slate-800 mb-2 flex items-center gap-2">
                         <span class="w-7 h-7 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center text-sm font-black">3</span>
                         Step 3. 본문 내용 확인 퀴즈
                     </h2>
-                    <p class="text-sm text-slate-500 mb-6">지문의 맥락을 이해하고 적합한 답을 고르세요. (퀴즈 풀이는 제출 데이터에 함께 기록됩니다.)</p>
+                    <p class="text-sm text-slate-500 mb-6">지문의 핵심 구성을 검증하기 위한 AI 맞춤형 퀴즈입니다. 답안을 골라 직접 해결해보세요.</p>
                     
                     <div class="space-y-8 bg-purple-50/50 border border-purple-100 p-6 rounded-2xl">
                         
@@ -332,8 +332,8 @@
                         <div class="quiz-item" data-qindex="2">
                             <p class="font-bold text-slate-800 text-base mb-3">Q2. 괴테의 격언에서 '자신을 실제보다 더 높게 보는 것'과 대조되는 또 다른 위험은 무엇인가요?</p>
                             <div class="space-y-2">
-                                <div class="quiz-option" data-option="1"><input type="radio" name="q2" value="1" id="q2_o1" required><label for="q2_o1">① 자신을 실제보다 더 낮게 평가하는 것</label></div>
-                                <div class="quiz-option" data-option="2"><input type="radio" name="q2" value="2" id="q2_o2" data-correct="true"><label for="q2_o2">② 자신의 약점을 과도하게 드러내는 것</label></div>
+                                <div class="quiz-option" data-option="1"><input type="radio" name="q2" value="1" id="q2_o1" data-correct="true" required><label for="q2_o1">① 자신을 실제보다 더 낮게 평가하는 것</label></div>
+                                <div class="quiz-option" data-option="2"><input type="radio" name="q2" value="2" id="q2_o2"><label for="q2_o2">② 자신의 약점을 과도하게 드러내는 것</label></div>
                                 <div class="quiz-option" data-option="3"><input type="radio" name="q2" value="3" id="q2_o3"><label for="q2_o3">③ 타인의 능력만을 과도하게 의식하는 것</label></div>
                                 <div class="quiz-option" data-option="4"><input type="radio" name="q2" value="4" id="q2_o4"><label for="q2_o4">④ 내면 탐색을 지나치게 자주 하는 것</label></div>
                             </div>
@@ -354,8 +354,8 @@
                         <div class="quiz-item" data-qindex="4">
                             <p class="font-bold text-slate-800 text-base mb-3">Q4. 다음 중 'self-aware'라는 단어가 이 글에서 가지는 함의로 가장 적절한 것은?</p>
                             <div class="space-y-2">
-                                <div class="quiz-option" data-option="1"><input type="radio" name="q4" value="1" id="q4_o1" required><label for="q4_o1">① 자신의 약점까지 포함하여 자신을 있는 그대로 인식하는 상태</label></div>
-                                <div class="quiz-option" data-option="2"><input type="radio" name="q4" value="2" id="q4_o2" data-correct="true"><label for="q4_o2">② 자신감이 넘쳐서 그 무엇도 두렵지 않은 상태</label></div>
+                                <div class="quiz-option" data-option="1"><input type="radio" name="q4" value="1" id="q4_o1" data-correct="true" required><label for="q4_o1">① 자신의 약점까지 포함하여 자신을 있는 그대로 인식하는 상태</label></div>
+                                <div class="quiz-option" data-option="2"><input type="radio" name="q4" value="2" id="q4_o2"><label for="q4_o2">② 자신감이 넘쳐서 그 무엇도 두렵지 않은 상태</label></div>
                                 <div class="quiz-option" data-option="3"><input type="radio" name="q4" value="3" id="q4_o3"><label for="q4_o3">③ 타인이 자신을 어떻게 보는지 정확히 파악하는 상태</label></div>
                                 <div class="quiz-option" data-option="4"><input type="radio" name="q4" value="4" id="q4_o4"><label for="q4_o4">④ 자신이 가진 단점을 모두 없앤 완벽한 상태</label></div>
                             </div>
@@ -382,7 +382,7 @@
                     </div>
                 </section>
 
-                <!-- STEP 4: 구조화 인포그래픽 완성 -->
+                <!-- STEP 4: 구조화 인포그래픽 완성 (첨부파일 1 구현체) -->
                 <section class="section-card">
                     <h2 class="text-xl font-bold text-slate-800 mb-2 flex items-center gap-2">
                         <span class="w-7 h-7 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center text-sm font-black">4</span>
@@ -392,7 +392,6 @@
                     
                     <div class="bg-slate-50 p-6 md:p-8 rounded-2xl border border-slate-200 shadow-inner space-y-8">
                         
-                        <!-- 왜곡된 자아상 두가지 함정 -->
                         <div class="text-center">
                             <h3 class="inline-block bg-white px-5 py-1.5 rounded-full font-bold text-slate-700 shadow-sm border border-slate-200 text-sm">왜곡된 자아상의 두 가지 함정</h3>
                         </div>
@@ -417,16 +416,14 @@
                                 <h4 class="font-bold text-slate-800 mb-2">
                                     진정한 가치를 <input type="text" id="img2" required class="info-input" placeholder="과소평가"> 하는 위험
                                 </h4>
-                                <p class="text-xs text-slate-500 leading-relaxed">자신의 실제 능력을 낮게 평가하여 기회를 선제적으로 포기해버리는 행위</p>
+                                <p class="text-xs text-slate-500 leading-relaxed">자신의 능력을 실제 가치보다 낮게 평가하여 기회를 선제적으로 포기해버리는 행위</p>
                             </div>
                         </div>
 
-                        <!-- Connector Line -->
                         <div class="flex justify-center text-slate-300">
                             <i data-lucide="chevrons-down" class="w-8 h-8 animate-bounce"></i>
                         </div>
 
-                        <!-- 정직한 내면 성찰 -->
                         <div class="text-center">
                             <h3 class="inline-block bg-white px-5 py-1.5 rounded-full font-bold text-slate-700 shadow-sm border border-slate-200 text-sm">성장을 위한 정직한 내면 성찰</h3>
                         </div>
@@ -469,13 +466,12 @@
         </div>
     </div>
 
+    <!-- 커스텀 모달 알림창 -->
     <div id="customModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center z-50 hidden">
         <div class="bg-white rounded-2xl shadow-2xl p-6 max-w-sm w-full mx-4 border border-slate-100 transform scale-95 transition-all">
-            <div id="modalIcon" class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <!-- Icon loaded programmatically -->
-            </div>
+            <div id="modalIcon" class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4"></div>
             <h3 id="modalTitle" class="text-lg font-bold text-slate-900 text-center mb-2">알림</h3>
-            <p id="modalBody" class="text-sm text-slate-600 text-center mb-6 leading-relaxed">상세 내용 메시지 영역입니다.</p>
+            <p id="modalBody" class="text-sm text-slate-600 text-center mb-6 leading-relaxed">메시지 내용입니다.</p>
             <button onclick="closeCustomModal()" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-bold py-2.5 rounded-xl transition">
                 확인
             </button>
@@ -509,7 +505,6 @@
         // 1-3. 대시보드 로그인 처리
         function unlockAdminDashboard() {
             const pw = document.getElementById('adminPassword').value;
-            // 기본 비밀번호 '1234'로 설정
             if (pw === '1234') {
                 document.getElementById('adminAuthArea').innerHTML = `<span class="text-xs text-purple-600 font-bold flex items-center gap-1"><i data-lucide="lock-open" class="w-3.5 h-3.5"></i> 인증 완료</span>`;
                 document.getElementById('adminContent').classList.remove('hidden');
@@ -567,11 +562,11 @@
                 const time = row.timestamp ? new Date(row.timestamp).toLocaleTimeString('ko-KR', {hour12: false, hour: '2-digit', minute:'2-digit'}) : '-';
                 
                 // 지문 요약
-                const wsSummary = `(1):${row.ws1 || '-'}, (2):${row.ws2 || '-'}, (3):${row.ws3 || '-'} ...`;
+                const wsSummary = `(1):${row.ws1 || '-'}, (2):${row.ws2 || '-'}, (3):${row.ws3 || '-'}`;
                 // 퀴즈 요약
                 const quizSummary = `Q1:${row.q1 || '-'}, Q2:${row.q2 || '-'}, Q3:${row.q3 || '-'}, Q4:${row.q4 || '-'}, Q5:${row.q5 || '-'}`;
                 // 인포그래픽 요약
-                const imgSummary = `①:${row.img1 || '-'}, ②:${row.img2 || '-'}, ③:${row.img3 || '-'}, ④:${row.img4 || '-'}, ⑤:${row.img5 || '-'}`;
+                const imgSummary = `①:${row.img1 || '-'}, ②:${row.img2 || '-'}`;
 
                 html += `
                     <tr class="hover:bg-slate-50 transition">
@@ -600,7 +595,7 @@
             renderAdminTable(filtered);
         }
 
-        // 1-7. 엑셀 저장 (CSV UTF-8 BOM 다운로드로 Excel 문자깨짐 해결)
+        // 1-7. 엑셀 저장 (CSV UTF-8 BOM 다운로드로 Excel 한글 깨짐 방지 및 구문 수정 완료)
         function exportToExcel() {
             if (allSubmissions.length === 0) {
                 showModal('error', '다운로드 실패', '내보낼 데이터가 존재하지 않습니다.');
@@ -629,7 +624,7 @@
                 csvContent += line.join(",") + "\n";
             });
 
-            // Excel에서 한글 깨짐을 방지하기 위해 UTF-8 BOM 추가 (\uFEFF)
+            // Excel 한글 깨짐을 해결하기 위해 UTF-8 BOM 추가
             const bom = "\uFEFF";
             const blob = new Blob([bom + csvContent], { type: 'text/csv;charset=utf-8;' });
             
@@ -646,23 +641,26 @@
             }
         }
 
-        // 2. 로컬 스토리지에서 Firebase 정보 불러오기
+        // 2. 로컬 스토리지에서 Firebase 정보 불러오기 (설정이 없으면 기본 제공값으로 자동 연결)
         function loadSavedConfig() {
-            const apiKey = localStorage.getItem('fb_apiKey');
-            const dbUrl = localStorage.getItem('fb_dbUrl');
-            const projId = localStorage.getItem('fb_projId');
-            const appId = localStorage.getItem('fb_appId');
+            // 정은샘의 파이어베이스 프로젝트 고유 기본값 세팅
+            const defaultApiKey = "AIzaSyDFzyu1f0eWwdcKYY_e-nbgPKsuy1_Kbow";
+            const defaultDbUrl = "https://english-b9a26-default-rtdb.firebaseio.com";
+            const defaultProjId = "english-b9a26";
+            const defaultAppId = "1:339311625169:web:09c8906f634df10b0e96f0";
 
-            if (apiKey && dbUrl) {
-                document.getElementById('fbApiKey').value = apiKey;
-                document.getElementById('fbDbUrl').value = dbUrl;
-                document.getElementById('fbProjectId').value = projId;
-                document.getElementById('fbAppId').value = appId;
+            // 브라우저 캐시에 수동 저장된 값이 없다면 위 기본값을 즉시 사용
+            const apiKey = localStorage.getItem('fb_apiKey') || defaultApiKey;
+            const dbUrl = localStorage.getItem('fb_dbUrl') || defaultDbUrl;
+            const projId = localStorage.getItem('fb_projId') || defaultProjId;
+            const appId = localStorage.getItem('fb_appId') || defaultAppId;
 
-                initFirebase(apiKey, dbUrl, projId, appId);
-            } else {
-                updateStatus(false, "설정 대기 중 (패널을 열어 설정해주세요)");
-            }
+            document.getElementById('fbApiKey').value = apiKey;
+            document.getElementById('fbDbUrl').value = dbUrl;
+            document.getElementById('fbProjectId').value = projId;
+            document.getElementById('fbAppId').value = appId;
+
+            initFirebase(apiKey, dbUrl, projId, appId);
         }
 
         // 3. 파이어베이스 정보 저장 및 재로드
@@ -693,12 +691,13 @@
         function initFirebase(apiKey, dbUrl, projId, appId) {
             try {
                 const firebaseConfig = {
-                    apiKey: "AIzaSyDFzyu1f0eWwdcKYY_e-nbgPKsuy1_Kbow",
-                    authDomain: "english-b9a26.firebaseapp.com",
-                    projectId: "english-b9a26",
-                    storageBucket: "english-b9a26.firebasestorage.app",
+                    apiKey: apiKey,
+                    databaseURL: dbUrl,
+                    authDomain: projId + ".firebaseapp.com",
+                    projectId: projId,
+                    storageBucket: projId + ".appspot.com",
                     messagingSenderId: "339311625169",
-                    appId: "1:339311625169:web:09c8906f634df10b0e96f0"
+                    appId: appId
                 };
                 // 중복 초기화 방지
                 if (!firebase.apps.length) {
@@ -728,6 +727,7 @@
             }
         }
 
+        // 6. 퀴즈 자가 채점 시스템
         function evaluateQuizAnswers() {
             let correctCount = 0;
             const totalQuestions = 5;
@@ -772,6 +772,7 @@
             }
         }
 
+        // 7. 폼 데이터 전송 처리 및 실시간 중복 체크
         function submitForm(event) {
             event.preventDefault();
 
@@ -850,6 +851,7 @@
             });
         }
 
+        // 8. 알림 모달 제어 함수
         function showModal(type, title, message) {
             const modal = document.getElementById('customModal');
             const mIcon = document.getElementById('modalIcon');
